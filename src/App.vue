@@ -33,4 +33,20 @@
 
 
 <style lang="scss">
+#app{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  header,
+  footer{
+    flex-shrink: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main{
+    flex-grow: 1;
+  }
+}
 </style>

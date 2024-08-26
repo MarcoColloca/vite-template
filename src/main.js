@@ -1,5 +1,6 @@
 import { createApp } from 'vue'
 import './assets/style/general.scss'
+import router from './router'
 import App from './App.vue'
 import * as bootstrap from 'bootstrap'
 
@@ -40,6 +41,7 @@ library.add(faClockSolid, faClockRegular, faChevronDownSolid, faTwitter, faFaceb
 
 const app = createApp(App)
 
+app.use(router)
 app.component('font-awesome-icon', FontAwesomeIcon)
 
 app.mount('#app')
